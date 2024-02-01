@@ -3,7 +3,7 @@
 #clean up all dangling resources
 clean_all() {
   echo "Clean all"
-  docker system prune -a --volumes
+  docker system prune -a -f --volumes
 }
 
 clean_images() {
